@@ -1,9 +1,0 @@
-motil
-monolay
-pna
-finger
-collect
-biol
-epitheli
-epithelium
-leader

@@ -1,9 +1,0 @@
-dendrit
-lymph
-chemokin
-nod
-mice
-differenti
-lymphocyt
-receptor
-signal

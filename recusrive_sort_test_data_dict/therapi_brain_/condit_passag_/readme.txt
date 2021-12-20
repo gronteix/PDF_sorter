@@ -1,9 +1,0 @@
-condit
-passag
-line
-serum
-sphere
-aggreg
-data
-cultur
-stem

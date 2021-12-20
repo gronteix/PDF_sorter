@@ -1,9 +1,0 @@
-chip
-platform
-hydrogel
-screen
-test
-devic
-integr
-scaffold
-anal
