@@ -1,0 +1,9 @@
+particl
+equat
+give
+tumbl
+express
+term
+laplac
+lett
+bodi

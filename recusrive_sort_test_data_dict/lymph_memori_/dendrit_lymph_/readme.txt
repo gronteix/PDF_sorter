@@ -1,0 +1,9 @@
+dendrit
+lymph
+nod
+lymphocyt
+receptor
+role
+dynam
+addit
+bone

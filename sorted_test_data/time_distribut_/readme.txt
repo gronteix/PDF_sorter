@@ -1,0 +1,10 @@
+time
+distribut
+result
+differ
+simul
+phi
+valu
+veloc
+number
+state

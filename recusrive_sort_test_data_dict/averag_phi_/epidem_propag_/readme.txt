@@ -1,0 +1,9 @@
+epidem
+propag
+heterogen
+rate
+singl
+individu
+behavior
+popul
+infect

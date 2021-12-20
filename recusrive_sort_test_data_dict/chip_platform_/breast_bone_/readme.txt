@@ -1,0 +1,9 @@
+breast
+bone
+lung
+specif
+tumour
+extravas
+vascular
+integr
+metastat

@@ -1,0 +1,9 @@
+nation
+percent
+social
+develop
+increas
+econom
+institut
+polici
+public

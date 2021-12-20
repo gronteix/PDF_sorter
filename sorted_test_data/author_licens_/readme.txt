@@ -1,0 +1,10 @@
+author
+licens
+grant
+holder
+preprint
+copyright
+dataset
+funder
+intern
+ncem
