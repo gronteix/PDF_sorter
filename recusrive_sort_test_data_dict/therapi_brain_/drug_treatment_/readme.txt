@@ -1,9 +1,0 @@
-drug
-treatment
-radiat
-review
-grade
-mutat
-oncolog
-genet
-molecular

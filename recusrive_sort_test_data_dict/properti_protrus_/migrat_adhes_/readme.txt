@@ -1,9 +1,0 @@
-migrat
-adhes
-integrin
-actin
-matrix
-protein
-substrat
-edg
-lead

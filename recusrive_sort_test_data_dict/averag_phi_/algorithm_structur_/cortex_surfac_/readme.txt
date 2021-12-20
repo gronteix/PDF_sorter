@@ -1,9 +1,0 @@
-cortex
-surfac
-area
-averag
-cortic
-limit
-paper
-subject
-extend

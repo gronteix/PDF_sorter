@@ -1,9 +1,9 @@
 dendrit
 lymph
+chemokin
 nod
+mice
+differenti
 lymphocyt
 receptor
-role
-dynam
-addit
-bone
+signal

@@ -1,9 +1,0 @@
-data
-time
-size
-averag
-scale
-volum
-biolog
-avail
-confin

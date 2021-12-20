@@ -1,9 +1,0 @@
-figur
-confin
-size
-alga
-drosophila
-growth
-nation
-author
-droplet

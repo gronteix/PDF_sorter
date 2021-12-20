@@ -1,9 +1,0 @@
-data
-time
-commun
-network
-algorithm
-distribut
-observ
-simul
-step

@@ -1,9 +1,0 @@
-structur
-gener
-measur
-method
-pattern
-aggreg
-stem
-aapl
-align

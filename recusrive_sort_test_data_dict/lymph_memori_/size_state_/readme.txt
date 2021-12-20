@@ -1,9 +1,0 @@
-size
-state
-averag
-inform
-popul
-measur
-avail
-confin
-phi

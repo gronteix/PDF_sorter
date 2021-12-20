@@ -1,9 +1,0 @@
-cortex
-right
-surfac
-base
-supplementari
-tumor
-natur
-area
-articl

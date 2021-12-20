@@ -1,9 +1,0 @@
-surviv
-approach
-arrow
-diseas
-infect
-scan
-viru
-heat
-resect

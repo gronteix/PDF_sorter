@@ -1,9 +1,0 @@
-size
-confin
-inform
-sampl
-volum
-alga
-densiti
-droplet
-drosophila

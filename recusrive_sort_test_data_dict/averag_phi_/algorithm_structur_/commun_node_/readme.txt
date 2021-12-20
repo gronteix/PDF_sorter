@@ -1,9 +1,0 @@
-commun
-node
-detect
-graph
-modular
-nod
-partit
-natur
-function

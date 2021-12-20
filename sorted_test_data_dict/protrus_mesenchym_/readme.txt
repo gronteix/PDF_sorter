@@ -1,9 +1,0 @@
-protrus
-mesenchym
-cadherin
-focal
-rigid
-tension
-feff
-kinas
-membran

@@ -1,9 +1,9 @@
 condit
 passag
-stem
-murin
+line
 serum
 sphere
 aggreg
-line
-analysi
+data
+cultur
+stem
