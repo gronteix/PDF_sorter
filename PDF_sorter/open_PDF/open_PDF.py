@@ -1,17 +1,20 @@
 import numpy as np
 
+
 def open_PDF_PyPDF2(pdf_file):
     """
     This function opens a PDF file and returns the data as a numpy array.
     """
     import PyPDF2
-    pdf_file = open(pdf_file, 'rb')
+
+    pdf_file = open(pdf_file, "rb")
     pdf_reader = PyPDF2.PdfFileReader(pdf_file)
     pdf_data = []
     for page in range(pdf_reader.numPages):
         pdf_data.append(pdf_reader.getPage(page).extractText())
     pdf_data = np.array(pdf_data)
     return pdf_data
+
 
 def open_PDF_tika(pdf_file):
 
@@ -20,41 +23,48 @@ def open_PDF_tika(pdf_file):
     """
     import tika
     from tika import parser
+
     pdf_data = parser.from_file(pdf_file)
-    pdf_data = pdf_data['content']
+    pdf_data = pdf_data["content"]
     return pdf_data
+
 
 def clean_text(pdf_data):
     """
     This function cleans the text data.
     """
-    pdf_data = pdf_data.replace('\n', ' ')
-    pdf_data = pdf_data.replace('\r', ' ')
-    pdf_data = pdf_data.replace('\t', ' ')
-    pdf_data = pdf_data.replace('\xa0', ' ')
-    pdf_data = pdf_data.replace('-', '')
-    pdf_data = pdf_data.replace('"', '')
-    pdf_data = pdf_data.replace('[', '')
-    pdf_data = pdf_data.replace(']', '')
-    pdf_data = pdf_data.replace(').', '')
-    pdf_data = pdf_data.replace('].', '')
+    pdf_data = pdf_data.replace("\n", " ")
+    pdf_data = pdf_data.replace("\r", " ")
+    pdf_data = pdf_data.replace("\t", " ")
+    pdf_data = pdf_data.replace("\xa0", " ")
+    pdf_data = pdf_data.replace("-", "")
+    pdf_data = pdf_data.replace('"', "")
+    pdf_data = pdf_data.replace("[", "")
+    pdf_data = pdf_data.replace("]", "")
+    pdf_data = pdf_data.replace(").", "")
+    pdf_data = pdf_data.replace("].", "")
     return pdf_data
+
 
 def remove_mathematical_expressions_text(pdf_data):
     """
     This function removes mathematical expressions from the text data.
     """
     import re
-    pdf_data = re.sub(r'\$.*?\$', '', pdf_data)
+
+    pdf_data = re.sub(r"\$.*?\$", "", pdf_data)
     return pdf_data
+
 
 def remove_numbers_from_text(pdf_data):
     """
     This function removes the numbers from the text data.
     """
     import re
-    pdf_data = re.sub(r'\d+', '', pdf_data)
+
+    pdf_data = re.sub(r"\d+", "", pdf_data)
     return pdf_data
+
 
 def extract_concepts_from_text(pdf_data):
     """
@@ -62,9 +72,11 @@ def extract_concepts_from_text(pdf_data):
     """
     import nltk
     from nltk.corpus import stopwords
-    nltk.download('stopwords')
-    stop_words = set(stopwords.words('english'))
+
+    nltk.download("stopwords")
+    stop_words = set(stopwords.words("english"))
     import string
+
     punctuation = set(string.punctuation)
     pdf_data = pdf_data.lower()
     pdf_data = pdf_data.split()
