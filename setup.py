@@ -11,7 +11,6 @@ setup(
     url="https://github.com/gronteix/PDF_sorter",
     install_requires=[
         "numpy",
-        "os",
         "scipy",
         "networkx",
         "pytest",
@@ -22,6 +21,9 @@ setup(
         "black",
         "gensim",
         "tox",
+        "nltk",
+        "tika",
+        "pytest"
     ],
     packages=[
         "PDF_sorter",
