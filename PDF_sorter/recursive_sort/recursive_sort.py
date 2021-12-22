@@ -108,6 +108,7 @@ def move_articles(G, PDF_DIR, DESTINATION_DIR):
 
 def recursive_sort_papers_from_dict(
     DICTNAME,
+    DICTDIR,
     PDF_DIR,
     SORTED_DIR,
     max_common_words,
@@ -125,7 +126,7 @@ def recursive_sort_papers_from_dict(
     except ImportError:  # Python 3.x
         import pickle
 
-    with open(DICTNAME, "rb") as fp:
+    with open(os.path.join(DICTDIR, DICTNAME), "rb") as fp:
         paper_dictionnary = pickle.load(fp)
 
     word_count = utils.make_word_list(paper_dictionnary)
