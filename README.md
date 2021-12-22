@@ -1,4 +1,4 @@
-# This is **PDF_sorter**
+# This is **`PDF_sorter`**
 
 Some people might have spent their past years in research downloading endless stacks of PDF documents without any proper sorting system. This *can* have consequences when writing a bibliography or a review article.
 
