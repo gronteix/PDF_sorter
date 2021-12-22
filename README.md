@@ -14,4 +14,4 @@ pip install .
 
 ## Requirements
 
-The current program uses [`tika`](https://github.com/chrismattmann/tika-python), which requires at least Java 8 to be installed on the computer. Earlier versions of Java will lead to errors in the PDF parsing.
+The current program uses [`tika`](https://github.com/chrismattmann/tika-python), which requires at least Java 8 to be [installed](https://java.com/en/download/help/download_options.html) on the computer. Earlier versions of Java will lead to errors in the PDF parsing.
