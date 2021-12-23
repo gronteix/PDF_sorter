@@ -24,7 +24,7 @@ The program can be called from the command line with the following structure:
 python -m PDF_sorter $PATH_TO_PDFs
 ```
 
-For further options call:
+This will generate a folder containing the sorted PDFs in the folder given as a parameter. Each sub-folder storing the papers will contain a list of its characteristic keywords. For further options call:
 
 ```
 python -m PDF_sorter --help
