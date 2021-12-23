@@ -27,10 +27,12 @@ python -m PDF_sorter $PATH_TO_PDFs
 This will generate a folder containing the sorted PDFs in the `$PATH_TO_PDFs` folder according to their keywords. A typical result would be:
 
 ```
-├── sorted_papers           # Folder containing the sorted papers
-│   ├── keyword1_keyword2_  # Nested sub-directories
-│   ├── keyword3_keyword4_  # keywords 1..6 are common paper topics
-│   └── keyword5_keyword6_  
+├── sorted_papers                   # Folder containing the sorted papers
+│   ├── keyword1_keyword2_          # Nested sub-directories
+│   ├── keyword3_keyword4_          # keywords 1..6 are common paper topics
+│   └── keyword5_keyword6_
+│   │   ├── keyword7_keyword8_      # Sub-sub-directories
+│   │   └── keyword9_keyword10_  
 ```
 
 Further options are possible, such as the number of topics to extract per paper or the precision of the clustering in the Louvain community clustering. For a full list of options type in:
