@@ -18,13 +18,25 @@ The current program uses [`tika`](https://github.com/chrismattmann/tika-python),
 
 ## Usage
 
-The program can be called from the command line. The principal argument `$PATH_TO_PDFs` is the path to the directory containing the PDFs to be sorted. A typical call is as follows:
+After installation, the program can be called from the command line. The principal argument `$PATH_TO_PDFs` is the path to the directory containing the PDFs to be sorted. A typical call is as follows:
 
 ```
 python -m PDF_sorter $PATH_TO_PDFs
 ```
 
-This will generate a folder containing the sorted PDFs in the `$PATH_TO_PDFs` folder. Each sub-folder storing the papers will contain a list of its characteristic keywords. For further options call:
+This will generate a folder containing the sorted PDFs in the `$PATH_TO_PDFs` folder according to their keywords. A typical result would be:
+
+```
+.
+
+├── sorted_papers           # Folder containing the sorted papers
+│   ├── keyword1_keyword2_  # Nested sub-directories
+│   ├── keyword3_keyword4_  # keywords 1..6 are common paper topics
+│   └── keyword5_keyword6_  
+
+```
+
+For further options call:
 
 ```
 python -m PDF_sorter --help
