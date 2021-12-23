@@ -18,16 +18,16 @@ The current program uses [`tika`](https://github.com/chrismattmann/tika-python),
 
 ## Usage
 
-The program can be called from the command line with the following structure:
+The program can be called from the command line. The principal argument `$PATH_TO_PDFs` is the path to the directory containing the PDFs to be sorted. A typical call is as follows:
 
 ```
 python -m PDF_sorter $PATH_TO_PDFs
 ```
 
-This will generate a folder containing the sorted PDFs in the folder given as a parameter. Each sub-folder storing the papers will contain a list of its characteristic keywords. For further options call:
+This will generate a folder containing the sorted PDFs in the `$PATH_TO_PDFs` folder. Each sub-folder storing the papers will contain a list of its characteristic keywords. For further options call:
 
 ```
 python -m PDF_sorter --help
 ```
 
-In particular the precision of the clustering in the Louvain community clustering can be tailored with the option `partition_resolution`. 
+In particular the precision of the clustering in the Louvain community clustering can be tailored with the option `--partition_resolution`. 
