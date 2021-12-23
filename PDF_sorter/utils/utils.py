@@ -222,7 +222,6 @@ def get_word_prob(counter_dict):
     total_word_number = np.sum([counter_dict[k] for k in counter_dict.keys()])
 
     counter_frame = pandas.DataFrame()
-    i = 0
 
     for word in counter_dict.keys():
 

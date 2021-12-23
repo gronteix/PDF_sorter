@@ -154,6 +154,7 @@ def recursive_sort_papers_from_dict(
 
     return
 
+
 def recursive_sort_papers_based_on_contents(
     PDF_DIR: str,
     SORTED_DIR: str,
@@ -174,7 +175,7 @@ def recursive_sort_papers_based_on_contents(
     """
     Recursive sort from PDFs contained in a folder.
     Generates a new folder for each of the topics.
-    
+
     Parameters:
     -----------
      - PDF_DIR: str
@@ -205,7 +206,7 @@ def recursive_sort_papers_based_on_contents(
         Initial iteration number.
      - max_depth: int
         Maximum depth of the recursion.
-        
+
     Returns:
     --------
      - None
@@ -240,4 +241,3 @@ def recursive_sort_papers_based_on_contents(
     )
 
     return
-

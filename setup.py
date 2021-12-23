@@ -23,7 +23,7 @@ setup(
         "tox",
         "nltk",
         "tika",
-        "pytest"
+        "pytest",
     ],
     packages=[
         "PDF_sorter",

@@ -1,7 +1,4 @@
-import numpy as np
-import networkx as nx
 import PDF_sorter.utils.utils as utils
-
 
 def sort_papers_based_on_contents(
     PDF_DIR,
