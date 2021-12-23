@@ -15,3 +15,19 @@ pip install .
 ## Requirements
 
 The current program uses [`tika`](https://github.com/chrismattmann/tika-python), which requires at least Java 8 to be [installed](https://java.com/en/download/help/download_options.html) on the computer. Earlier versions of Java will lead to errors in the PDF parsing.
+
+## Usage
+
+The program can be called from the command line with the following structure:
+
+```
+python -m PDF_sorter $PATH_TO_PDFs
+```
+
+For further options call:
+
+```
+python -m PDF_sorter --help
+```
+
+In particular the precision of the clustering in the Louvain community clustering can be tailored with the option `partition_resolution`. 
