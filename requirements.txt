@@ -1,0 +1,12 @@
+numpy
+networkx
+pytest
+tqdm
+pandas
+black
+tqdm
+pip
+tox
+click 
+gensim
+nltk
