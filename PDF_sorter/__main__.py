@@ -1,5 +1,7 @@
-import click
 import os
+
+import click
+
 from PDF_sorter.recursive_sort import recursive_sort
 
 

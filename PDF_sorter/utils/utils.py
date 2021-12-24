@@ -1,25 +1,21 @@
-import numpy as np
-import os
 import glob
-import PDF_sorter.open_PDF.open_PDF as open_PDF
-import gensim
-from gensim.parsing.preprocessing import (
-    preprocess_string,
-    strip_punctuation,
-    strip_numeric,
-)
-from nltk.stem import PorterStemmer
-from nltk.stem import WordNetLemmatizer
-from tqdm import tqdm
-import nltk
-from collections import Counter
-import networkx as nx
-
+import os
 import shutil
+from collections import Counter
 from shutil import copyfile
 
 import community.community_louvain as community_louvain
+import gensim
+import networkx as nx
+import nltk
+import numpy as np
 import pandas
+from gensim.parsing.preprocessing import (preprocess_string, strip_numeric,
+                                          strip_punctuation)
+from nltk.stem import PorterStemmer, WordNetLemmatizer
+from tqdm import tqdm
+
+import PDF_sorter.open_PDF.open_PDF as open_PDF
 
 nltk.download("wordnet")
 stemmer = PorterStemmer()

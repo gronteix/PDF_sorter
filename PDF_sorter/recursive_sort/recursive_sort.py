@@ -1,9 +1,10 @@
-import numpy as np
-import networkx as nx
 import os
 import shutil
 from shutil import copyfile
+
 import community.community_louvain as community_louvain
+import networkx as nx
+import numpy as np
 
 import PDF_sorter.utils.utils as utils
 
