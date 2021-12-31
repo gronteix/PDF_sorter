@@ -10,8 +10,11 @@ import networkx as nx
 import nltk
 import numpy as np
 import pandas
-from gensim.parsing.preprocessing import (preprocess_string, strip_numeric,
-                                          strip_punctuation)
+from gensim.parsing.preprocessing import (
+    preprocess_string,
+    strip_numeric,
+    strip_punctuation,
+)
 from nltk.stem import PorterStemmer, WordNetLemmatizer
 from tqdm import tqdm
 

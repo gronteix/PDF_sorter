@@ -4,7 +4,7 @@ from tika import parser
 def open_PDF_tika(pdf_file):
 
     """
-    This function opens a PDF file using tika and returns the 
+    This function opens a PDF file using tika and returns the
     data as a numpy array.
     """
 

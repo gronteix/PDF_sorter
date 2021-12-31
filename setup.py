@@ -24,6 +24,7 @@ setup(
         "nltk",
         "tika",
         "pytest",
+        "fire",
     ],
     packages=[
         "PDF_sorter",

@@ -1,98 +1,31 @@
 import os
-
-import click
-
+import fire
 from PDF_sorter.recursive_sort import recursive_sort
 
 
-@click.command()
-@click.argument("pdf_dir", nargs=1)
-@click.option(
-    "--sorted_dir",
-    type=str,
-    default="",
-    help="Repository where the sorted papers will be stored",
-)
-@click.option(
-    "--max_common_words",
-    default=1,
-    help="Number of most common words to remove from the analysis",
-)
-@click.option(
-    "--num_words",
-    type=int,
-    default=10,
-    help="Number of words to use for the topic modeling",
-)
-@click.option(
-    "--num_topics",
-    type=int,
-    default=10,
-    help="Number of topics to use for the topic modeling",
-)
-@click.option(
-    "--n_largest_names",
-    type=int,
-    default=2,
-    help="Number of most common names in partition to name the folder",
-)
-@click.option(
-    "--partition_resolution",
-    type=float,
-    default=0.9,
-    help="Resolution of the partition in the Louvain algorithm. A smaller value will lead to a more precise partition, but will take more time.",
-)
-@click.option(
-    "--n_largest_description",
-    type=int,
-    default=10,
-    help="Number of most common words in partition to describe the folder contents",
-)
-@click.option(
-    "--savedict",
-    type=bool,
-    default=True,
-    help="Whether to save the dictionnary containing the paper descriptions.",
-)
-@click.option(
-    "--dict_dir",
-    type=str,
-    default="dictionnary",
-    help="Path to the folder where the dictionnary will be stored.",
-)
-@click.option(
-    "--min_graph_size",
-    type=int,
-    default=10,
-    help="Minimum number of papers in a partition to be considered for further classification.",
-)
-@click.option(
-    "--no_keywords",
-    "-nk",
-    type=list,
-    default=["http", "ncbi", "experi", "biorxiv", "pubm", "elsevi", "refhub"],
-    show_default=True,
-    help="Keywords to exlude from articles",
-)
-@click.option("--iteration", type=int, default=0, help="Initial iteration number.")
-@click.option(
-    "--max_depth", type=int, default=5, help="Maximum depth of the recursive sort."
-)
 def main(
-    pdf_dir,
-    sorted_dir,
-    max_common_words,
-    num_words,
-    num_topics,
-    n_largest_names,
-    partition_resolution,
-    n_largest_description,
-    savedict,
-    dict_dir,
-    min_graph_size,
-    no_keywords,
-    iteration,
-    max_depth,
+    pdf_dir: str = "",
+    sorted_dir: str = "",
+    max_common_words: int = 1,
+    num_words: int = 10,
+    num_topics: int = 10,
+    n_largest_names: int = 2,
+    partition_resolution: float = 0.9,
+    n_largest_description: int = 10,
+    savedict: bool = True,
+    dict_dir: str = "dictionnary",
+    min_graph_size: int = 10,
+    no_keywords: list = [
+        "http",
+        "ncbi",
+        "experi",
+        "biorxiv",
+        "pubm",
+        "elsevi",
+        "refhub",
+    ],
+    iteration: int = 0,
+    max_depth: int = 5,
 ):
 
     # Recursive sort from PDFs contained in a folder.
@@ -122,5 +55,4 @@ def main(
 
 
 if __name__ == "__main__":
-
-    main()
+    fire.Fire(main)

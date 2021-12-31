@@ -7,6 +7,6 @@ black
 tqdm
 pip
 tox
-click 
+fire 
 gensim
 nltk
