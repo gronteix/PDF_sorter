@@ -4,7 +4,7 @@ from PDF_sorter.recursive_sort import recursive_sort
 
 
 def main(
-    pdf_dir: str = "",
+    pdf_dir: str,
     sorted_dir: str = "",
     max_common_words: int = 1,
     num_words: int = 10,
@@ -13,7 +13,7 @@ def main(
     partition_resolution: float = 0.9,
     n_largest_description: int = 10,
     savedict: bool = True,
-    dict_dir: str = "dictionnary",
+    dict_dir: str = "",
     min_graph_size: int = 10,
     no_keywords: list = [
         "http",
@@ -30,9 +30,14 @@ def main(
 
     # Recursive sort from PDFs contained in a folder.
     if sorted_dir == "":
-        if not os.path.exists(pdf_dir):
+        if not os.path.exists(os.path.join(pdf_dir, "sorted_papers")):
             os.mkdir(os.path.join(pdf_dir, "sorted_papers"))
         sorted_dir = os.path.join(pdf_dir, "sorted_papers")
+
+    if dict_dir == "":
+        if not os.path.exists(os.path.join(pdf_dir, "dictionnary")):
+            os.mkdir(os.path.join(pdf_dir, "dictionnary"))
+        dict_dir = os.path.join(pdf_dir, "dictionnary")
 
     recursive_sort.recursive_sort_papers_based_on_contents(
         PDF_DIR=pdf_dir,
