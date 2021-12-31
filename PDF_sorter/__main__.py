@@ -2,7 +2,6 @@ import os
 import fire
 from PDF_sorter.recursive_sort import recursive_sort
 
-
 def main(
     pdf_dir: str,
     sorted_dir: str = "",
@@ -27,6 +26,44 @@ def main(
     iteration: int = 0,
     max_depth: int = 5,
 ):
+
+    """
+    Sorts PDFs into folders based on their common words.
+    
+    Parameters:
+    -----------
+    - pdf_dir : str
+        Directory containing the PDFs to sort.
+    - sorted_dir : str, optional
+        Directory to save the sorted PDFs. The default is "".
+    - max_common_words : int, optional
+        The maximum number of common words to use for sorting. The default is 1.
+    - num_words : int, optional
+        The number of words to use for sorting. The default is 10.
+    - num_topics : int, optional
+        The number of topics to use for sorting. The default is 10.
+    - n_largest_names : int, optional
+        The number of names to use for sorting. The default is 2.
+    - partition_resolution : float, optional
+        The partition resolution to use for the Louvain community clustering. The default is 0.9.
+    - n_largest_description : int, optional
+        The number of descriptions to use for sorting. The default is 10.
+    - savedict : bool, optional
+        Whether to save the dictionary containing the PDF information. The default is True.
+    - dict_dir : str, optional
+        Directory to save the dictionary. The default is "".
+    - min_graph_size : int, optional
+        The minimum number of nodes in the graph to use for sorting. The default is 10.
+    - no_keywords : list, optional
+        List of keywords to ignore. The default is [].
+    - iteration : int, optional
+        The iteration number to use for sorting. The default is 0.
+    - max_depth : int, optional
+        The maximum depth to use for sorting. The default is 5.
+    
+    Returns:
+    --------
+    - None."""
 
     # Recursive sort from PDFs contained in a folder.
     if sorted_dir == "":
